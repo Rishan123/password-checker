@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "adventures_in_c#/1.0.0": {
+        "runtime": {
+          "adventures_in_c#.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "adventures_in_c#/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

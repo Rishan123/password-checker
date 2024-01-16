@@ -1,0 +1,14 @@
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/bin/Debug/net8.0/adventures_in_c#
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/bin/Debug/net8.0/adventures_in_c#.deps.json
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/bin/Debug/net8.0/adventures_in_c#.runtimeconfig.json
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/bin/Debug/net8.0/adventures_in_c#.dll
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/bin/Debug/net8.0/adventures_in_c#.pdb
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.AssemblyInfoInputs.cache
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.AssemblyInfo.cs
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.csproj.CoreCompileInputs.cache
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.dll
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/refint/adventures_in_c#.dll
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.pdb
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.genruntimeconfig.cache
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/ref/adventures_in_c#.dll
