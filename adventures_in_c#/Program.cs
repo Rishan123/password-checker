@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("first project");    
+        Console.WriteLine("first project in c#");    
     }
 }
