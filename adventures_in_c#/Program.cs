@@ -5,13 +5,33 @@ class Program
     {
         HomeScreen();
     }
-    static void calculateScore(string password)
+    static void calculateScore(string validPassword)
     {
-        Console.WriteLine(password);
+        int score = validPassword.Length;
+        bool hasUpper = false;
+        foreach (char i in validPassword)
+        {
+            if (hasUpper == false)
+            {
+                if (Char.IsUpper(i))
+                {
+                    Console.WriteLine("Character is uppercase");
+                    score = score + 5;
+                    hasUpper = true;
+                }
+            }
+            /*
+            if (Char.IsLower(i))
+            {
+                score = score + 5;
+            }
+            */
+        }
+        Console.WriteLine(score);
     }
     static void HomeScreen()
     {
-        string[] allowedChars = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+" };
+        string[] allowedChars = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+","A" ,"B", "C", "D", "E", "F", "G", "H", "I", "J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
         bool charvalidity = true;
         Console.WriteLine("Choose 1,2 or 3 out of the options below:");
         Console.WriteLine("(1) Check Password");
@@ -57,6 +77,7 @@ class Program
                 else
                 {
                     Console.WriteLine("the characters and length of the password is fine");
+                    calculateScore(password);
                     //HomeScreen();
                 }
             }
@@ -64,7 +85,6 @@ class Program
             {
                 Console.WriteLine("the characters are invalid");
             }
-            calculateScore(password);
             HomeScreen();
         }
         if (option == "2")
