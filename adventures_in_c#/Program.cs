@@ -8,7 +8,7 @@ class Program
     static void HomeScreen()
     {
         string[] allowedChars = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+" };
-        bool validity = true;
+        bool charvalidity = true;
         Console.WriteLine("Choose 1,2 or 3 out of the options below:");
         Console.WriteLine("(1) Check Password");
         Console.WriteLine("(2) Generate Password");
@@ -23,7 +23,7 @@ class Program
             {
                 for (int j = 0; j < allowedChars.Length; j++)
                 {
-                    Console.WriteLine(i.ToString());
+                    //Console.WriteLine(i.ToString());
                     /*
                     if (i.ToString() == (allowedChars[j]))
                     {
@@ -33,43 +33,34 @@ class Program
                     if (i.ToString() != (allowedChars[j]))
                     {
                         //Console.WriteLine("that is invalid");
-                        validity = false;
+                        charvalidity = false;
                     }
-                
-                    Console.WriteLine(validity);
+                    else if (i.ToString() == (allowedChars[j]))
+                    {
+                        charvalidity = true;
+                        break;
+                    }
                 }
- 
             }
-            if (validity == true)
+            if (charvalidity == true)
             {
-                Console.WriteLine("the characters are valid valid");
+                //Console.WriteLine("the characters are valid");
                 if (password.Length < 8 ^ password.Length > 24)
                 {
                     Console.WriteLine("Password must be between 8 and 24 characters long");
-                    HomeScreen();
+                    //HomeScreen();
                 }
                 else
                 {
-                    Console.WriteLine("your password is fine");
-                    HomeScreen();
+                    Console.WriteLine("the characters and length of the password is fine");
+                    //HomeScreen();
                 }
             }
-            else if (validity == false)
+            else if (charvalidity == false)
             {
-                Console.WriteLine("password is invalid");
+                Console.WriteLine("the characters are invalid");
             }
-            /*
-            if (password.Length < 8 ^ password.Length > 24)
-            {
-                Console.WriteLine("Password must be between 8 and 24 characters long");
-                HomeScreen();
-            }
-            else
-            {
-                Console.WriteLine("your password is fine");
-                HomeScreen();
-            }
-            */
+            HomeScreen();
         }
         if (option == "2")
         {
