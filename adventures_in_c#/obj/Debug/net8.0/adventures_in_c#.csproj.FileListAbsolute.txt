@@ -12,3 +12,4 @@
 /Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.pdb
 /Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.genruntimeconfig.cache
 /Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/ref/adventures_in_c#.dll
+/Users/aloksharma/Dropbox/Mac/Documents/adventures_in_c#/adventures_in_c#/obj/Debug/net8.0/adventures_in_c#.sourcelink.json
