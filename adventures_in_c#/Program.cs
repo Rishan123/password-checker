@@ -15,7 +15,7 @@ class Program
             {
                 if (Char.IsUpper(i))
                 {
-                    Console.WriteLine("Character is uppercase");
+                    //Console.WriteLine("Character is uppercase");
                     score = score + 5;
                     hasUpper = true;
                 }
@@ -27,7 +27,7 @@ class Program
             }
             */
         }
-        Console.WriteLine(score);
+        Console.WriteLine("Your Password Score is" + score);
     }
     static void HomeScreen()
     {
