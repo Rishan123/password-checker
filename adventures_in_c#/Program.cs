@@ -3,14 +3,19 @@ class Program
 {
     static void Main(string[] args)
     {
+        string[] allowedChars = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+","A" ,"B", "C", "D", "E", "F", "G", "H", "I", "J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
         HomeScreen();
     }
     static void calculateScore(string validPassword)
     {
         int score = validPassword.Length;
         bool hasUpper = false;
+        bool hasLower = false;
+        bool hasNum = false;
         foreach (char i in validPassword)
         {
+            for (int j = 0; j < allowedChars.Length; j++)
+            {
             if (hasUpper == false)
             {
                 if (Char.IsUpper(i))
@@ -20,6 +25,26 @@ class Program
                     hasUpper = true;
                 }
             }
+            else if (hasLower == false)
+            {
+                if (Char.IsLower(i))
+                {
+                    //Console.WriteLine("Character is uppercase");
+                    score = score + 5;
+                    hasLower = true;
+                }
+            }
+            else if (hasNum == false)
+            {
+                if (Char.IsNumber(i))
+                {
+                    //Console.WriteLine("Character is uppercase");
+                    score = score + 5;
+                    hasNum   = true;
+                }
+            }
+            }
+
             /*
             if (Char.IsLower(i))
             {
@@ -31,7 +56,6 @@ class Program
     }
     static void HomeScreen()
     {
-        string[] allowedChars = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+","A" ,"B", "C", "D", "E", "F", "G", "H", "I", "J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
         bool charvalidity = true;
         Console.WriteLine("Choose 1,2 or 3 out of the options below:");
         Console.WriteLine("(1) Check Password");
